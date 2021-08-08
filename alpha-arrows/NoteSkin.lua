@@ -10,10 +10,10 @@ Nskin.ButtonRedir =
 	{
 	-- cardinal directions
 
-		Up				= "Down",
-		Down			= "Down",
-		Left			= "Down",
-		Right			= "Down",
+		Up			= "Down",
+		Down		= "Down",
+		Left		= "Down",
+		Right		= "Down",
 
 	-- ordinal directions
 
@@ -35,9 +35,9 @@ Nskin.Rotate =
 	{
 	-- cardinal directions
 
-		Up 				= 180,
-		Down 			= 0,
-		Left 			= 90,
+		Up 			= 180,
+		Down 		= 0,
+		Left 		= 90,
 		Right 		= -90,
 
 	-- ordinal directions
@@ -45,7 +45,7 @@ Nskin.Rotate =
 		UpLeft 		= 135,
 		UpRight 	= -135,
 		DownLeft 	= 45,
-		DownRight = -45,
+		DownRight 	= -45,
 
 	-- centre is center
 
@@ -58,9 +58,11 @@ Nskin.Rotate =
 Nskin.ElementRedir =
 
 	{
-		["Tap Fake"]						= "Tap Note",
+		["Tap Fake"]				= "Tap Note",
 		["Hold Explosion"]			= "Tap Explosion Dim",
 		["Roll Explosion"]			= "Hold Explosion",
+		["Hold LiftTail Active"]	= "Hold LiftTail Inactive",	
+		["Roll LiftTail"]			= "Hold LiftTail",
 	}
 
 -- [4.] Element Rotations
@@ -70,19 +72,20 @@ Nskin.ElementRedir =
 Nskin.PartsToRotate =
 
 	{
-		["Receptor"]								= true,
-		["Tap Explosion Bright"]		= false,
-		["Tap Explosion Dim"]				= false,
-		["Tap Note"]								= true,
-		["Tap Fake"]								= true,
-		["Tap Lift"]								= true,
-		["Tap Addition"]						= true,
-		["Hold Explosion"]					= true,
-		["Hold Head Active"]				= true,
-		["Hold Head Inactive"]			= true,
-		["Roll Explosion"]					= true,
-		["Roll Head Active"]				= true,
-		["Roll Head Inactive"]			= true,
+		["Receptor"]				= true,
+		["Tap Explosion Bright"]	= false,
+		["Tap Explosion Dim"]		= false,
+		["Tap Note"]				= true,
+		["Tap Fake"]				= true,
+		["Tap Lift"]				= true,
+		["Tap Addition"]			= true,
+		["Tap Mine"] 				= false,
+		["Hold Explosion"]			= true,
+		["Hold Head Active"]		= true,
+		["Hold Head Inactive"]		= true,
+		["Roll Explosion"]			= true,
+		["Roll Head Active"]		= true,
+		["Roll Head Inactive"]		= true,
 	}
 
 -- [5.] Blank Redirects
@@ -92,11 +95,11 @@ Nskin.PartsToRotate =
 Nskin.Blank =
 
 	{
-		["Hold Tail Active"]				= true,
-		["Hold Tail Inactive"]			= true,
-		["Roll Tail Active"]				= true,
-		["Roll Tail Inactive"]			= true,
-		["Center Hold Topcap"]			= true,
+		["Hold Tail Active"]		= true,
+		["Hold Tail Inactive"]		= true,
+		["Roll Tail Active"]		= true,
+		["Roll Tail Inactive"]		= true,
+		["Center Hold Topcap"]		= true,
 	}
 
 -- [6.] Buttons and Elements
